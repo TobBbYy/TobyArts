@@ -17,3 +17,14 @@ for (let i = 0; i < 100; i++) {
     star.setAttribute("data-speed", `${0.1 + Math.random() * 0.5}`);
     document.querySelector(".stars").appendChild(star);
 }
+
+/* animacion
+const animatedDiv = document.querySelector(".div-container");
+
+animatedDiv.addEventListener("animationend", function() {
+    // Cuando la primera animación (fadeIn) termine
+    setTimeout(function() {
+        // Después de un intervalo de 2 segundos, aplicamos la segunda animación (scaleUp)
+        animatedDiv.style.animation = "scaleup 2s ease-in-out forwards";
+    }, 2000); // 2000 milisegundos (2 segundos)
+}); */

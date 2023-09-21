@@ -25,6 +25,56 @@ body {
     box-shadow: 200px 0 #fff, -200px 0 #fff, 0 200px #fff, 0 -200px #fff, 150px 150px #fff, -150px 150px #fff, 150px -150px #fff, -150px -150px #fff, 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
+.div-container {
+    text-align: center;
+}
+
+.img {
+    width: 14%; /* Ancho deseado */
+    height: 14%; /* Alto deseado */
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 16px;
+    display: inline-block;
+    animation-fill-mode: forwards;
+    transform: translateY(50px);
+    animation: fadein 2s ease-in-out forwards, slide 1s ease-in-out 2s forwards;
+
+}
+
+/*.div-container {
+    opacity: 0;
+    text-align: center;
+    animation-fill-mode: forwards;
+    transform: translateY(50px);
+    animation: fadein 2s ease-in-out forwards, slide 1s ease-in-out 2s forwards;
+}*/
+
+@keyframes fadein {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(50px);
+        opacity: 1;
+    }
+}
+@keyframes slide {
+    0% {
+        
+        opacity: 1;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(50px) translateX(-600px);
+    }
+}
+
+
+
 .spacer {
     height: 2000px; /* Crea espacio para hacer scroll */
 }
